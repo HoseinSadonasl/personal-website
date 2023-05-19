@@ -1,0 +1,20 @@
+.item-container {
+    width: 75%;
+    justify-content: start;
+}
+
+.image-container {
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+.image-item {
+    width: 200px;
+    height: 200px;
+}
+
+.description-container {
+    width: 75%;
+    display: block;
+}
