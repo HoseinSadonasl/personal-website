@@ -6,10 +6,10 @@ import Navigation from "./components/navComponent/Navigation";
 
 const App = () => {
   return (
-    <div className="container">
-      <Navigation />
-      {/*<Intro />
-     <ItemComponent
+    <div>
+      <Navigation className="nav" />
+      <Intro />
+      {/*<ItemComponent
         image="https://picsum.photos/200"
         name="NAME"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,

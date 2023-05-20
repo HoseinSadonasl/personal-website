@@ -1,14 +1,14 @@
 .intro-container {
-  max-width: 100%;
-  display: inline-flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(131, 97, 255);
-  padding: 10px 0px 10px 0px;
+  padding: 24px;
 }
 
 .info-container {
-  padding-left: 24px;
   background-color: transparent;
   display: inline;
   width: auto;
@@ -16,35 +16,88 @@
 
 .image {
   display: block;
+  margin: 48px;
   max-width: 240px;
   border-radius: 50%;
 }
 
 .name {
-  font-size: 80px;
-  color: #b8e7ff;
+  font-size: 60px;
+  color: #ffffff;
   text-align: center;
-  font-family: sans-serif;
-  font-weight: lighter;
-
 }
 
 .bio {
   color: white;
-  font-size: 28px;
-  font-family: sans-serif;
+  font-size: 24px;
   font-weight: lighter;
-  margin-top: 3px;
+  line-height: 1.5;
+  text-align: center;
+  overflow: auto;
+}
+
+div div hr {
+  margin: 16px;
 }
 
 .contact-me {
-  display: inline-flex;
-  width: 100%;
+  display: flex;
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 50px;
+  align-items: center;
+  background-color: var(--mainColorLight);
   margin-top: 12px;
-  background-color: transparent;
+  padding: 12px;
 }
 
-.contact-me IconBtn{
-  width: max-content;
-}
+@media only screen and (min-width: 768px) {
+  .intro-container {
+    max-width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(131, 97, 255);
+    padding: 10px 0px 10px 0px;
+  }
 
+  .info-container {
+    padding-left: 24px;
+    background-color: transparent;
+    display: inline;
+    width: auto;
+  }
+
+  .image {
+    display: block;
+    max-width: 240px;
+    border-radius: 50%;
+  }
+
+  .name {
+    font-size: 80px;
+    color: #b8e7ff;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+  }
+
+  .bio {
+    color: white;
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-top: 3px;
+  }
+
+  .contact-me {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 12px;
+    background-color: transparent;
+  }
+
+  .contact-me IconBtn {
+    width: max-content;
+  }
+}
