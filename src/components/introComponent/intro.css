@@ -1,30 +1,41 @@
 .intro-container {
+  min-height: 0;
+  min-width: 0;
+  margin-top: 56px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(131, 97, 255);
-  padding: 24px;
-}
-
-.info-container {
-  background-color: transparent;
-  display: inline;
-  width: auto;
+  padding: 16px;
 }
 
 .image {
   display: block;
-  margin: 48px;
+  margin: 36px;
   max-width: 240px;
   border-radius: 50%;
+  box-shadow: 0px 35px 100px var(--mainColorLight);
+}
+
+.info-container {
+  justify-content: center;
+  align-items: center;
 }
 
 .name {
-  font-size: 60px;
+  font-size: 56px;
   color: #ffffff;
   text-align: center;
+  font-weight: lighter;
+  background-color: transparent;
+}
+
+.role-text {
+  color: var(--mainColorLight);
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 12px;
 }
 
 .bio {
@@ -33,71 +44,58 @@
   font-weight: lighter;
   line-height: 1.5;
   text-align: center;
-  overflow: auto;
+  margin-bottom: 12px;
 }
 
 div div hr {
-  margin: 16px;
-}
-
-.contact-me {
-  display: flex;
-  border-style: solid;
-  border-width: 1.5px;
-  border-radius: 50px;
-  align-items: center;
-  background-color: var(--mainColorLight);
-  margin-top: 12px;
-  padding: 12px;
 }
 
 @media only screen and (min-width: 768px) {
   .intro-container {
-    max-width: 100%;
-    display: inline-flex;
+    margin-top: 96px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(131, 97, 255);
-    padding: 10px 0px 10px 0px;
+    padding: 24px;
   }
 
   .info-container {
-    padding-left: 24px;
-    background-color: transparent;
-    display: inline;
-    width: auto;
+    margin: 24px;
+    align-content: center;
   }
 
   .image {
-    display: block;
     max-width: 240px;
     border-radius: 50%;
+    margin: 0;
   }
 
   .name {
-    font-size: 80px;
-    color: #b8e7ff;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: lighter;
+    width: fit-content;
+    font-size: 48px;
+  }
+
+  .role-text {
+    font-size: 20px;
   }
 
   .bio {
-    color: white;
-    font-size: 28px;
-    font-family: sans-serif;
-    font-weight: lighter;
-    margin-top: 3px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .intro-container {
+    max-width: 75%;
   }
 
-  .contact-me {
-    display: inline-flex;
-    width: 100%;
-    margin-top: 12px;
-    background-color: transparent;
+  .name {
+    width: fit-content;
+    font-size: 72px;
   }
 
-  .contact-me IconBtn {
-    width: max-content;
+  .image {
+    max-width: 260px;
+    margin: 24px 36px 24px 0px;
   }
 }

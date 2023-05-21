@@ -1,11 +1,32 @@
-div {
+div div {
   display: flex;
   flex-direction: column;
   transition-timing-function: ease-in;
-  overflow: auto;
+  align-items: center;
 }
 
-.nav {
-  position: fixed;
-  top: 0;
+.contact-me {
+  width: 75%;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--colorDark);
+  box-shadow: 0px 35px 100px -50px var(--mainColorLight);
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-me {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 35px 100px -20px var(--mainColorLight);
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact-me {
+    width: 75%;
+  }
 }
