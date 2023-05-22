@@ -15,6 +15,13 @@ div div {
   box-shadow: 0px 35px 100px -50px var(--mainColorLight);
 }
 
+.section-name {
+  font-size: 64px;
+  font-weight: bolder;
+  margin: 48px 0px 24px 0px;
+  text-shadow: 0px 15px 60px var(--mainColorLight);
+}
+
 @media only screen and (min-width: 768px) {
   .contact-me {
     width: 95%;
@@ -23,10 +30,20 @@ div div {
     box-shadow: 0px 35px 100px -20px var(--mainColorLight);
     justify-content: space-around;
   }
+  .section-name {
+    width: 95%;
+    font-size: 48px;
+    font-weight: bolder;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .contact-me {
     width: 75%;
+  }
+  .section-name {
+    width: 75%;
+    font-size: 48px;
+    font-weight: bolder;
   }
 }
